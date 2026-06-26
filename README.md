@@ -1,4 +1,4 @@
-# AI Resume Analyzer & Action Plan Generator
+# AI RESUME ANALYZER
 
 ## Why I Built This
 During my research, I noticed that standard ATS (Applicant Tracking System) software rejects a massive percentage of resumes just because of formatting issues like hidden tables or multi-column layouts. I built this tool to simulate a strict ATS parser so candidates can see exactly how a machine reads their resume before they apply. It also uses AI to find skill gaps and recommend a 90-day upskilling roadmap.

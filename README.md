@@ -1,22 +1,21 @@
-# ⚡ AI Resume Analyzer & Action Plan Generator
+# AI Resume Analyzer & Action Plan Generator
 
-**Capstone Project by Adityavikram Maheshwari**
+## Why I Built This
+During my research, I noticed that standard ATS (Applicant Tracking System) software rejects a massive percentage of resumes just because of formatting issues like hidden tables or multi-column layouts. I built this tool to simulate a strict ATS parser so candidates can see exactly how a machine reads their resume before they apply. It also uses AI to find skill gaps and recommend a 90-day upskilling roadmap.
 
-A standalone web application that acts as a strict Applicant Tracking System (ATS) parser and Senior Technical Recruiter. Built using Python, Streamlit, and the Groq AI API.
+## Core Features
+* **ATS Layout Parsing:** Strips away visual elements and uses custom Python regex logic to check for unreadable formatting and multi-column breaks.
+* **Domain Relevance Check:** Evaluates the candidate's past experience against the specific target role, penalizing generic resumes.
+* **Recruiter Action Plan:** Generates a personalized 90-day learning roadmap and tough, role-specific interview questions.
 
-## 🚀 Features
-* **ATS Diagnostics:** Strips away visual formatting to evaluate resumes exactly how enterprise software does, checking for multi-column breaks and unreadable fonts.
-* **Domain Match Knockout:** Mathematically penalizes resumes if the candidate's experience completely misaligns with the target role.
-* **Action Plan Generation:** Generates a personalized 90-day learning roadmap, highlights critical skill gaps, and provides tough, role-specific interview questions.
+## Technologies Used
+* **Language:** Python 3
+* **UI Framework:** Streamlit
+* **Document Extraction:** PyPDF2 & python-docx
+* **AI Backend:** Groq API (LLaMA 3 model for fast inference)
 
-## 💻 Tech Stack
-* **Python 3**
-* **Streamlit** (Frontend UI)
-* **PyPDF2 & python-docx** (Document Parsing)
-* **Groq API / LLaMA 3** (LLM Backend)
-
-## 🛠️ How to Run Locally
-1. Clone this repository.
-2. Install dependencies: `pip install -r requirements.txt`
-3. Add your Groq API key to `.streamlit/secrets.toml`.
-4. Run the app: `streamlit run app.py`
+## How to Run Locally
+1. Clone this repository to your local machine.
+2. Install the required libraries: `pip install -r requirements.txt`
+3. Create a `.streamlit/secrets.toml` file and add your Groq API key: `GROQ_API_KEY = "your_key_here"`
+4. Start the server: `streamlit run app.py`

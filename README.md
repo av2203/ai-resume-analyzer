@@ -4,7 +4,7 @@
 During my research, I noticed that standard ATS (Applicant Tracking System) software rejects a massive percentage of resumes just because of formatting issues like hidden tables or multi-column layouts. I built this tool to simulate a strict ATS parser so candidates can see exactly how a machine reads their resume before they apply. It also uses AI to find skill gaps and recommend a 90-day upskilling roadmap.
 
 ## Core Features
-* **ATS Layout Parsing:** Strips away visual elements and uses custom Python regex logic to check for unreadable formatting and multi-column breaks.
+* **ATS Layout Parsing:** Strips away visual elements and uses custom Python logic to check for unreadable formatting and multi-column breaks.
 * **Domain Relevance Check:** Evaluates the candidate's past experience against the specific target role, penalizing generic resumes.
 * **Recruiter Action Plan:** Generates a personalized 90-day learning roadmap and tough, role-specific interview questions.
 

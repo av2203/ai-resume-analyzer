@@ -1,0 +1,12 @@
+# Ignore Streamlit Secrets (HIGH SECURITY)
+.streamlit/
+secrets.toml
+.env
+
+# Ignore Virtual Environments
+venv/
+env/
+__pycache__/
+
+# Ignore Mac System Files
+.DS_Store

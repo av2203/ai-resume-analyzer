@@ -72,7 +72,7 @@ except Exception:
 
 # Model cascade (Groq specific)
 MODEL_CASCADE = [
-    "llama-3.3-70b-versatile",
+    "qwen3.6-27b",
     "llama-3.1-8b-instant",
     "mixtral-8x7b-32768"
 ]

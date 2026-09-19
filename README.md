@@ -1,12 +1,75 @@
 # AI Resume Analyzer & Action Plan Generator
 
+A resume analysis tool built with Python and Streamlit to help candidates evaluate their resumes for ATS compatibility, assess their relevance to a target career path, and identify areas for improvement.
+
+The application combines custom Python-based checks with LLM-generated analysis to provide practical feedback before applying for a role.
+
 ## Why I Built This
-During my research, I noticed that standard ATS (Applicant Tracking System) software rejects a massive percentage of resumes just because of formatting issues like hidden tables or multi-column layouts. I built this tool to simulate a strict ATS parser so candidates can see exactly how a machine reads their resume before they apply. It also uses AI to find skill gaps and recommend a 90-day upskilling roadmap.
+
+ATS systems can make it difficult to understand why a resume may not perform well during screening. Formatting, document structure, and the relevance of a resume to a specific role can all affect how it is interpreted.
+
+I built this project to provide a simple way to review these aspects before submitting an application. It analyzes resume structure, evaluates its relevance to a selected career path, identifies potential skill gaps, and generates recommendations for improvement.
 
 ## Core Features
-* **ATS Layout Parsing:** Strips away visual elements and uses custom Python logic to check for unreadable formatting and multi-column breaks.
-* **Domain Relevance Check:** Evaluates the candidate's past experience against the specific target role, penalizing generic resumes.
-* **Recruiter Action Plan:** Generates a personalized 90-day learning roadmap and tough, role-specific interview questions.
+
+### ATS Layout Analysis
+
+- Supports resume uploads in **PDF and DOCX** formats.
+- Parses resume content and checks its structure for ATS compatibility.
+- Uses custom Python logic to identify potential formatting and layout issues.
+- Evaluates resumes across **4 scoring dimensions**.
+- Performs **4 structural compatibility checks**.
+
+### Career & Domain Relevance
+
+- Supports **53 career paths** across **9 professional domains**.
+- Evaluates a resume against the selected target career path.
+- Identifies potential gaps between the candidate's current skills and the target role.
+- Helps identify areas where a resume can be made more role-specific.
+
+### Resume Analysis
+
+The application generates structured feedback including:
+
+- ATS evaluation
+- Resume summary
+- Skill-gap analysis
+- Career recommendations
+- Role-specific interview questions
+- Learning recommendations
+
+### 90-Day Action Plan
+
+Based on the selected career path and identified skill gaps, the application generates a **90-day roadmap** with recommended areas to focus on.
+
+## How It Works
+
+```text
+Resume (PDF / DOCX)
+        │
+        ▼
+Resume Parsing
+        │
+        ▼
+ATS & Structure Analysis
+        │
+        ▼
+Career Path Analysis
+        │
+        ▼
+LLM-based Analysis
+        │
+        ▼
+Structured Results
+        │
+        ├── ATS Evaluation
+        ├── Resume Summary
+        ├── Skill Gaps
+        ├── Career Recommendations
+        ├── Interview Questions
+        └── 90-Day Action Plan
+```
+
 
 ## Technologies Used
 * **Language:** Python 3
